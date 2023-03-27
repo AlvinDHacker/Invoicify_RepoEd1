@@ -2121,3 +2121,28 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+/* Added from old CSS */
+.input-group {
+	padding: 1rem;
+	width: 100%;
+}
+.input-group label {
+	display: block;
+	color: #222222;
+	font-size: 1.5rem;
+}
+.input-group input {
+	display: block;
+	width: 100%;
+	padding: 0.7rem 1rem;
+	margin-top: 0.5rem;
+	font-size: 1rem;
+	color: #424242;
+	outline: none;
+	border: 1px solid #ccc;
+	border-radius: 0.2rem;
+}
+.input-group input:focus {
+	border: 1px solid #228b22;
+}

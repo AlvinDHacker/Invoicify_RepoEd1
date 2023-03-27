@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="./style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css"
+		integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Invoice Calculator</title>
+</head>
+<body class="bg-soft-primary">
+	<div class="container text-center">
+		<div class="row align-items-start">
+			<div class="col-md-6">
+				<div class="card border-0">
+					<div class="justify-content-start">
+						<h1 class="p-3">Invoice Calculator</h1>
+						<div class="input-group w-100">
+							<input type="number" id="price-input" placeholder="Enter Product Price :" />
+							<input type="number" id="quantity-input" placeholder="Qty (Quantity) :" />
+							<input type="number" id="vat-input" placeholder="GST(%) :" />
+							<select id="vat-input" class="form-control mt-3">
+								<option value="0">0%</option>
+								<option value="0.25">0.25%</option>
+								<option value="5">5%</option>
+								<option value="12">12%</option>
+								<option value="18">18%</option>
+								<option value="28">28%</option>
+							  </select>
+
+						</div>
+
+						<div class="py-4 justify-content-center btn-group px-3">
+							<button class="btn bg-white shadow text-success mdi mdi-18px mdi-calculator px-3"
+								id="btn-success">Calculate</button>
+							<div class="spacer"></div>
+							<button class="btn bg-white shadow text-danger mdi mdi-18px mdi-restart px-3 "
+								id="btn-reset">Reset</button>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="container mtop result">
+					<p>
+						Your Total Cost is :
+						<span id="dynamic__cost">_________</span>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<img src="assets/img/Calculator-cuate.svg">
+			</div>
+		</div>
+	</div>
+	<script src="./app.js"></script>
+</body>
+</html>
