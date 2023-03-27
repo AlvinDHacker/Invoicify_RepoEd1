@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css"
+		integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Invoice Calculator</title>
+</head>
+
+<body class="bg-soft-primary">
+	<div class="container">
+		<h1 class="title">Invoice Calculator</h1>
+		<br>
+		<div class="card w-50">
+			<div class="justify-content-start">
+				<h1 class="px-3">Invoice Calculator</h1>
+				<div class="input-group">
+					<input type="number" id="price-input" placeholder="Enter Product Price :" />
+					<input type="number" id="quantity-input" placeholder="Qty (Quantity) :" />
+					<input type="number" id="vat-input" placeholder="GST(%) :" />
+				</div>
+
+				<div class="py-4 justify-content-center btn-group">
+					<button class="success " id="btn-success">Calculate</button>
+					<div class="spacer"></div>
+					<button class="danger " id="btn-reset">Reset</button>
+				</div>
+			</div>
+		</div>
+		<div class="container mtop result">
+			<p>
+				Your Total Cost is :
+				<span id="dynamic__cost">_________</span>
+			</p>
+		</div>
+	</div>
+	<script src="./app.js"></script>
+</body>
+
+</html>
