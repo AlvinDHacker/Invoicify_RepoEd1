@@ -17,30 +17,41 @@
 </head>
 
 <body class="bg-soft-primary">
-	<div class="container">
-		<h1 class="title">Invoice Calculator</h1>
-		<br>
-		<div class="card w-50">
-			<div class="justify-content-start">
-				<h1 class="px-3">Invoice Calculator</h1>
-				<div class="input-group">
-					<input type="number" id="price-input" placeholder="Enter Product Price :" />
-					<input type="number" id="quantity-input" placeholder="Qty (Quantity) :" />
-					<input type="number" id="vat-input" placeholder="GST(%) :" />
-				</div>
 
-				<div class="py-4 justify-content-center btn-group">
-					<button class="success " id="btn-success">Calculate</button>
-					<div class="spacer"></div>
-					<button class="danger " id="btn-reset">Reset</button>
+	<div class="container text-center">
+		<div class="row align-items-start">
+			<div class="col">
+				<h1 class="title">Invoice Calculator</h1>
+				<br>
+				<div class="card border-0">
+					<div class="justify-content-start">
+						<h1 class="p-3">Invoice Calculator</h1>
+						<div class="input-group">
+							<input type="number" id="price-input" placeholder="Enter Product Price :" />
+							<input type="number" id="quantity-input" placeholder="Qty (Quantity) :" />
+							<input type="number" id="vat-input" placeholder="GST(%) :" />
+						</div>
+
+						<div class="py-4 justify-content-center btn-group px-3">
+							<button class="btn bg-white shadow text-success mdi mdi-18px mdi-calculator"
+								id="btn-success">Calculate</button>
+							<div class="spacer"></div>
+							<button class="btn bg-white shadow text-danger mdi mdi-18px mdi-restart "
+								id="btn-reset">Reset</button>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="container mtop result">
+					<p>
+						Your Total Cost is :
+						<span id="dynamic__cost">_________</span>
+					</p>
 				</div>
 			</div>
-		</div>
-		<div class="container mtop result">
-			<p>
-				Your Total Cost is :
-				<span id="dynamic__cost">_________</span>
-			</p>
+			<div class="col">
+				<img src="img/Calculator-cuate.svg">
+			</div>
 		</div>
 	</div>
 	<script src="./app.js"></script>
